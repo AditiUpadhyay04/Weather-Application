@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather-App</title>
+
+    <link rel="icon" href="https://cdn.jim-nielsen.com/ios/512/weather-2017-06-19.png?rf=1024">
+    <link rel="stylesheet" href="./output.css">
+</head>
+
+<body
+    class="min-h-screen bg-linear-to-br from-blue-400 via-sky-300 to-cyan-200 flex justify-center items-center p-4"
+>
+
+    <div class="w-full max-w-md bg-white/40 backdrop-blur-lg shadow-2xl rounded-2xl p-6 border border-white/40">
+
+        <h1 class="text-3xl font-bold text-center text-white drop-shadow-md mb-6">
+            🌤️ Weather Application
+        </h1>
+
+        <div class="flex flex-col gap-4">
+
+            <input
+                type="text"
+                id="city-name"
+                placeholder="Enter City Name"
+                class="w-full px-4 py-3 rounded-xl outline-none border-2 border-white/60 text-gray-800 placeholder:text-gray-400 focus:ring-2 focus:ring-blue-500"
+            >
+
+            <button
+                id="search"
+                class="bg-blue-600 hover:bg-blue-800 text-white font-semibold py-3 rounded-xl transition-all duration-500"
+            >
+                Search Weather Details
+            </button>
+
+        </div>
+
+        <div id="result" class="hidden mt-6"></div>
+
+    </div>
+
+    <script src="./weather.js"></script>
+
+</body>
+</html>
